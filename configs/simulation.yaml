@@ -1,0 +1,4 @@
+simulation:
+  timestep: 0.002
+  duration: 10.0
+  render: true

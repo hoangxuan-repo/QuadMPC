@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quad-mpc"
+version = "0.1.0"
+description = "Quadruped MPC research prototype using MuJoCo"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "mujoco",
+    "matplotlib",
+    "pyyaml",
+    "osqp",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

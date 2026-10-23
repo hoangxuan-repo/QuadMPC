@@ -1,0 +1,3 @@
+robot:
+  name: quadruped
+  model_path: assets/quadruped/robot.xml
